@@ -39,7 +39,7 @@ about:
   license: BSD 3-Clause
   license_file: LICENSE
   license_family: BSD
-  summary: 'Efficient numerical simulation of Lindblad dynamics using permutational invariance'
+  summary: 'Efficient numerical simulation of Lindblad dynamics of open quantum systems using permutational invariance'
   doc_url: http://piqs.readthedocs.io/
   dev_url: https://github.com/nathanshammah/piqs
 

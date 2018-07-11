@@ -7,7 +7,7 @@ Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Efficient numerical simulation of Lindblad dynamics using permutational invariance
+Summary: Efficient numerical simulation of Lindblad dynamics of open quantum systems using permutational invariance.
 
 
 

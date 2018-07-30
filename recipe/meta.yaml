@@ -21,13 +21,13 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - python
+    - python >=3.5
     - pip
     - numpy
     - cython >=0.21
 
   run:
-    - python
+    - python >=3.5
     - cython >=0.21
     - scipy >=0.15
     - qutip >=4.2

@@ -17,14 +17,17 @@ build:
 
 requirements:
   build:
-    - python >=3.5
+    - {{ pin_compatible('numpy') }}
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - python
     - pip
     - numpy
     - cython >=0.21
 
   run:
-    - python >=3.5
-    - {{ pin_compatible('numpy') }}
+    - python
     - cython >=0.21
     - scipy >=0.15
     - qutip >=4.2

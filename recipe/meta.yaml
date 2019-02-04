@@ -13,7 +13,7 @@ source:
 build:
   skip: True  # [win]
   number: 1000
-  script: python -m pip install --no-deps --ignore-installed .
+  script: $PYTHON -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
@@ -25,7 +25,6 @@ requirements:
     - pip
     - numpy
     - cython >=0.21
-
   run:
     - python
     - cython >=0.21

@@ -11,19 +11,21 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  skip: True  # [win]
-  number: 0
+  skip: True  # [win or py<36]
+  number: 1000
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
-    - python >=3.5
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - python
     - pip
     - numpy
     - cython >=0.21
-
   run:
-    - python >=3.5
+    - python
     - {{ pin_compatible('numpy') }}
     - cython >=0.21
     - scipy >=0.15
@@ -45,5 +47,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - sahmed95
     - nathanshammah

@@ -12,12 +12,13 @@ source:
 
 build:
   skip: True  # [win or py<36]
-  number: 1001
+  number: 1002
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
